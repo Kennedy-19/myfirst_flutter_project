@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -24,8 +25,35 @@ class HomePage extends StatelessWidget {
             )
           ),
           child: Column(children: [
-            Container(margin: EdgeInsets.symmetric(horizontal: 15),
-            
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(horizontal:15),
+              height: 50,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Row(
+
+                children: [
+                Container(
+                  margin: EdgeInsets.only(left: 5),
+                  height: 50,
+                  width: 300,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "search here...",
+                    ),
+                  ),
+                ),
+                Spacer(),
+                Icon(Icons.camera_alt,
+                size: 27,
+                color: Color(0xFF4C53A5),
+                ),
+              ],
+              ),
             ),
           ],
         ),

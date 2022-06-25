@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          scaffoldBackgroundColor: Colors.amber,
+          scaffoldBackgroundColor: Color(0xFFFFFFFF),
         ), // ThemeData
         routes: {"/": (context) => HomePage()});
   }
