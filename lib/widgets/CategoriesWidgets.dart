@@ -22,7 +22,16 @@ class CategoriesWidget extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("images/1.png"),
+                Image.asset("images/1.png",
+                 width: 40,
+                 height: 40,
+                 ),
+                 Text(
+                  "High Heels",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                 )
               ],
             ),
           ),
